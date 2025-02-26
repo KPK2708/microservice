@@ -1,0 +1,9 @@
+package com.wipro.java.microservice.o;
+
+
+public class BlackFridayDiscount implements Discount {
+    @Override
+    public double applyDiscount(Book book) {
+        return book.getPrice() * 0.2; // 20% discount
+    }
+}
